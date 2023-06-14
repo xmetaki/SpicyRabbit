@@ -1,0 +1,15 @@
+.mt_button {
+    &__normal {
+        --button-color: #fff;
+        --button-background: #2cbfb1;
+        --button-hover: #38d1c3;
+        --button-active: #51d7cb;
+    }
+
+    &__danger {
+        --button-color: #fff;
+        --button-background: #eb0502;
+        --button-hover: #fd110f;
+        --button-active: #fd2f2d;
+    }
+}

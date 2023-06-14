@@ -1,0 +1,36 @@
+{
+  "name": "SpicyRabbit",
+  "version": "0.0.1",
+  "scripts": {
+    "prepare": "husky install",
+    "release": "standard-version",
+    "commit": "pnpm exec git cz"
+  },
+  "dependencies": {
+    "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
+    "eslint": "^8.42.0",
+    "eslint-plugin-vue": "^9.14.1",
+    "fast-glob": "^3.2.12",
+    "husky": "^8.0.3",
+    "json": "^11.0.0",
+    "lint-staged": "^13.2.2",
+    "standard-version": "^9.5.0"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,vue}": "pnpm exec eslint --fix"
+  }
+}

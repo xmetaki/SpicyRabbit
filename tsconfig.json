@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "bundler", // 指定模块解析策略
+      "useDefineForClassFields": true,
+      "strict": true,
+      "resolveJsonModule": true,
+      // "allowJs": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "lib": ["ESNext", "DOM"],
+      "skipLibCheck": true,
+      "typeRoots": ["node_modules/@types", "@types"]
+    },
+    "exclude": [
+      "examples",
+      "**/node_modules"
+    ]
+  }

@@ -1,0 +1,22 @@
+{
+  "name": "@spicyrabbit/components",
+  "version": "0.0.1",
+  "description": "@spicyrabbit/components",
+  "main": "index.ts",
+  "scripts": {},
+  "keywords": [
+    "vue3",
+    "components",
+    "ui"
+  ],
+  "author": "xmetaki",
+  "license": "MIT",
+  "devDependencies": {
+    "@spicyrabbit/utils": "workspace:*",
+    "@vue/runtime-core": "^3.3.4",
+    "vue": "^3.3.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  }
+}

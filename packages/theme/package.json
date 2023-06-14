@@ -1,0 +1,15 @@
+{
+  "name": "@spicyrabbit/theme",
+  "version": "0.0.1",
+  "description": "@spicyrabbit/theme",
+  "main": "index.scss",
+  "scripts": {
+  },
+  "keywords": [
+    "SpicyRabbit",
+    "css Library",
+    "Vue3"
+  ],
+  "author": "Xmetaki",
+  "license": "MIT"
+}

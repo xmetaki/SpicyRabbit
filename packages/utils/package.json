@@ -1,0 +1,13 @@
+{
+  "name": "@spicyrabbit/utils",
+  "version": "0.0.1",
+  "description": "@spicyrabbit/utils",
+  "main": "index.ts",
+  "private": true,
+  "devDependencies": {
+    "vue": "^3.3.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  }
+}
