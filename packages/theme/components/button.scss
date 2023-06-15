@@ -1,6 +1,10 @@
 @import '../variables/var.button.scss';
 
 .mt_button {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0px 3px;
     color: var(--button-color);
     background-color: var(--button-background);
     &:hover {

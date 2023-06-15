@@ -1,4 +1,7 @@
 # SpicyRabbit UI
+
+![logo](./docs/public/rabbit-small.png)
+
 A UI Component Library Based on Vue3 and Typescript
 
 ## 🚀 Install | 安装

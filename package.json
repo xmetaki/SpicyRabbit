@@ -4,7 +4,8 @@
   "scripts": {
     "prepare": "husky install",
     "release": "standard-version",
-    "commit": "pnpm exec git cz"
+    "commit": "pnpm exec git cz",
+    "docs": "pnpm run --filter @spicyrabbit/docs build"
   },
   "dependencies": {
     "typescript": "5.0.2"
