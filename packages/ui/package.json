@@ -8,7 +8,8 @@
   "scripts": {
     "build:theme": "vite build --config vite.config.css.ts",
     "build:ui": "vite build --config vite.config.ui.ts",
-    "build": "pnpm run build:theme && pnpm run build:ui"
+    "build": "pnpm run build:theme && pnpm run build:ui",
+    "publish": "pnpm run build && pnpm publish"
   },
   "exports": {
     ".": {
@@ -27,7 +28,8 @@
     "vue3"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "url": "https://github.com/xmetaki/SpicyRabbit"

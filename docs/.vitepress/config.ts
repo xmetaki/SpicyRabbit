@@ -4,7 +4,7 @@ import theme from "./config/theme"
 import { PluginComponents } from "./plugins"
 import MarkdownIt from "markdown-it"
 export default defineConfig({
-    titleTemplate: 'Butterfly :title',
+    titleTemplate: 'Rabbit :title',
     head,
     /**
      * @see https://vitepress.dev/reference/site-config#description
