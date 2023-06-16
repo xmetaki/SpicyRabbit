@@ -1,4 +1,5 @@
 # SpicyRabbit UI
+![logo]('../../docs/public/rabbit-small.png')
 > 充分利用monorepo优势的打包package
 
 ## Directory structure | 目录结构
