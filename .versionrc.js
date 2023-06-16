@@ -30,5 +30,6 @@ module.exports = {
         { "type": "depend",    "section": "🧵 Dependency | 依赖调整" },
         { "type": "perf",      "section": "⚡ Performance Improvements | 性能优化" },
         { "type": "build",     "section": "📦‍ Build System | 打包构建" },
-    ]
+    ],
+    "releaseCommitMessageFormat": "release(project): {{currentTag}}"
 }
