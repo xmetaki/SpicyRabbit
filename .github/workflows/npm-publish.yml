@@ -5,6 +5,8 @@ name: SpicyRabbit Github Release Action
 
 on:
   push:
+    tags:
+      - 'v*.*.*'
     branches:
       - main
 
@@ -31,6 +33,6 @@ jobs:
         run: pnpm install
       # 构建并发布
       - name: Build and Release UI Library
-        run: pnpm -w run release
+        run: pnpm -w run release:ui
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_publish_token}}

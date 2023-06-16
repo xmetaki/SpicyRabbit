@@ -3,8 +3,9 @@
   "version": "0.0.5",
   "scripts": {
     "prepare": "husky install",
-    "release": "pnpm run gen:version && pnpm run --filter @spicyrabbit/ui release",
+    "release": "pnpm run gen:version && pnpm run release:ui",
     "gen:version": "standard-version && git push --follow-tags origin main",
+    "release:ui": "pnpm run --filter @spicyrabbit/ui release",
     "commit": "pnpm exec git cz",
     "docs": "pnpm run --filter @spicyrabbit/docs build"
   },
