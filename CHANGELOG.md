@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/xmetaki/SpicyRabbit/compare/v0.0.8...v0.0.9) (2023-06-16)
+
+
+### 🚀 Chore | 构建/工程依赖/工具
+
+* **ui:** 调整readme文件 ([6d57949](https://github.com/xmetaki/SpicyRabbit/commit/6d579495390e19c4778bf32289a79c6f6f1c9e21))
+
 ### [0.0.8](https://github.com/xmetaki/SpicyRabbit/compare/v0.0.7...v0.0.8) (2023-06-16)
 
 
