@@ -1,10 +1,9 @@
 {
   "name": "@spicyrabbit/theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "@spicyrabbit/theme",
   "main": "index.scss",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
     "SpicyRabbit",
     "css Library",
