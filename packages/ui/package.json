@@ -9,7 +9,7 @@
     "build:theme": "vite build --config vite.config.css.ts",
     "build:ui": "vite build --config vite.config.ui.ts",
     "build": "pnpm run build:theme && pnpm run build:ui",
-    "release": "pnpm run build && pnpm publish"
+    "release": "pnpm run build && pnpm publish --no-git-checks"
   },
   "exports": {
     ".": {
