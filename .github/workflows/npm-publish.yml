@@ -1,0 +1,36 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
+
+name: SpicyRabbit Github Release Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - name: Checkout
+        uses: actions/checkout@v3
+      # 安装pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7.24.3
+      # 安装Node.js
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://registry.npmjs.org/
+      # 安装依赖
+      - name: Install Dependency
+        run: pnpm install
+      # 构建并发布
+      - name: Build and Release UI Library
+        run: pnpm -w run release
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_publish_token}}
