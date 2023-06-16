@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/xmetaki/SpicyRabbit/compare/v0.0.3...v0.0.4) (2023-06-16)
+
+
+### 🚀 Chore | 构建/工程依赖/工具
+
+* **project:** modifying errors to address publishing exceptions ([4f885ad](https://github.com/xmetaki/SpicyRabbit/commit/4f885ad74643bf0b5be1e8c4a4653312f0b85dc3))
+
 ### [0.0.3](https://github.com/xmetaki/SpicyRabbit/compare/v0.0.2...v0.0.3) (2023-06-16)
 
 
