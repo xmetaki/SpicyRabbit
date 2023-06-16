@@ -22,6 +22,12 @@
     "./es/*": "./dist/es/components/*",
     "./theme/*": "./dist/theme/*"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "keywords": [
     "SpicyRabbit",
     "UI components",
