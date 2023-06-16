@@ -1,6 +1,6 @@
 {
   "name": "@spicyrabbit/ui",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "UI Library based on Vue3",
   "main": "./dist/lib/components/index.js",
   "module": "./dist/es/components/index.js",
