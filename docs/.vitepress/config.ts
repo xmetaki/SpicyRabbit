@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress"
 import head from './config/head'
 import theme from "./config/theme"
-import { PluginComponents } from "./plugins"
+import { PluginComponents, PluginTable } from "./plugins"
 import MarkdownIt from "markdown-it"
 export default defineConfig({
     titleTemplate: 'Rabbit :title',
@@ -16,6 +16,7 @@ export default defineConfig({
     markdown: {
         config: (md: MarkdownIt):void => {
             md.use(PluginComponents)
+            md.use(PluginTable)
         }
     }
 })

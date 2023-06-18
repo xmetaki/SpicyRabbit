@@ -1,0 +1,49 @@
+// 移除表格默认样式
+table {
+    margin: 0;
+
+    th,
+    tr,
+    td {
+      border: none;
+      background-color: none;
+    }
+    tr:nth-child(2n) {
+      background-color: none;
+    }
+  }
+
+// 表格
+.vp-table__container {
+width: 100%;
+overflow-y: hidden;
+overflow-x: auto;
+
+table {
+    width: 100%;
+    display: inline-table;
+}
+
+th,
+tr:nth-child(2n) {
+    background-color: transparent;
+}
+
+td:nth-child(2) {
+    white-space: nowrap;
+}
+
+td,
+th {
+    text-align: left;
+    font-size: 15px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+th {
+    white-space: nowrap;
+    color: #fff;
+    background-color: #4153d9;
+    border: 1px solid #fff;
+}
+}

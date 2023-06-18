@@ -12,8 +12,8 @@
     "vitepress": "1.0.0-beta.1"
   },
   "dependencies": {
-    "@spicyrabbit/components": "workspace:^0.0.1",
-    "@spicyrabbit/theme": "workspace:^0.0.1",
+    "@spicyrabbit/components": "workspace:*",
+    "@spicyrabbit/theme": "workspace:*",
     "@types/markdown-it": "^12.2.3",
     "vue": "^3.3.4"
   }
