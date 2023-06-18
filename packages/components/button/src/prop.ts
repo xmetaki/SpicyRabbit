@@ -1,12 +1,15 @@
-import { PropType } from 'vue'
-export type ButtonType = 'primary' | 'success' | 'warning' | 'danger' | 'info' | 'text'
+import { ExtractPropTypes, PropType } from 'vue'
+import { ComponentType } from '../../_global'
+
 export const ButtonProps = {
     type: {
-        type: String as PropType<ButtonType>,
-        default: 'primary'
+        type: String as PropType<ComponentType>,
+        default: 'default'
     },
-    hahaMsg: {
-        type: String,
-        default: 'haha'
+    size: {
+        type: String as PropType<ComponentType>,
+        default: 'default'
     }
 }
+
+export type ButtonPropType = ExtractPropTypes<typeof ButtonProps>

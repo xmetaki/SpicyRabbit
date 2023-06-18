@@ -1,13 +1,15 @@
 <template>
-    <button class="mt_button mt_button__danger" :class="type">
-      {{ hahaMsg }}
+    <button :class="classList">
+      <slot></slot>
     </button>
 </template>
 
 <script setup lang="ts">
+import useButton from '../use-button';
 import { ButtonProps } from './prop'
 defineOptions({
     name: 'MtButton'
 })
-defineProps(ButtonProps)
+const props = defineProps(ButtonProps)
+const { classList } = useButton(props)
 </script>

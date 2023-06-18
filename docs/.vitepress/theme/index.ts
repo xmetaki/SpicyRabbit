@@ -1,6 +1,6 @@
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
-
+import "./index.scss"
 import Rabbit from '@spicyrabbit/components'
 import "@spicyrabbit/theme"
 import theme from 'vitepress/theme'

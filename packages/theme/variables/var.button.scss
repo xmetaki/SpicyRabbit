@@ -1,15 +1,75 @@
 .mt_button {
-    &__normal {
+    
+    &__primary {
         --button-color: #fff;
-        --button-background: #2cbfb1;
-        --button-hover: #38d1c3;
-        --button-active: #51d7cb;
+        --button-background: #4153d9;
+        --button-hover: #{lighten(#4153d9, 20%)};
+        --button-active: #{darken(#4153d9, 20%)};
+    }
+
+    &__success {
+        --button-color: #fff;
+        --button-background: #45BF55;
+        --button-hover: #{lighten(#45BF55, 20%)};
+        --button-active: #{darken(#45BF55, 20%)};
     }
 
     &__danger {
         --button-color: #fff;
-        --button-background: #eb0502;
-        --button-hover: #fd110f;
-        --button-active: #fd2f2d;
+        --button-background: #ff6d1f;
+        --button-hover: #{lighten(#ff6d1f, 20%)};
+        --button-active: #{darken(#ff6d1f, 20%)};
+    }
+
+    &__warning {
+        --button-color: #fff;
+        --button-background: #ffd412;
+        --button-hover: #{lighten(#ffd412, 20%)};
+        --button-active: #{darken(#ffd412, 20%)};
+    }
+
+    &__error {
+        --button-color: #fff;
+        --button-background: #d40d12;
+        --button-hover: #{lighten(#d40d12, 20%)};
+        --button-active: #{darken(#d40d12, 20%)};
+    }
+
+    &__default {
+        --button-color: #333;
+        --button-background: #f0f0f0;
+        --button-hover: #{lighten(#f0f0f0, 20%)};
+        --button-active: #{darken(#f0f0f0, 20%)};
+    }
+
+    &__info {
+        --button-color: #fff;
+        --button-background: #7B52ab;
+        --button-hover: #{lighten(#7B52ab, 20%)};
+        --button-active: #{darken(#7B52ab, 20%)};
+    }
+
+    &__large {
+        --button-height: 40px;
+        --button-padding: 30px;
+        --button-font-size: 16px;
+      }
+    
+    &__middle {
+    --button-height: 35px;
+    --button-padding: 25px;
+    --button-font-size: 15px;
+    }
+
+    &__small {
+    --button-height: 30px;
+    --button-padding: 20px;
+    --button-font-size: 14px;
+    }
+
+    &__tiny {
+    --button-height: 25px;
+    --button-padding: 15px;
+    --button-font-size: 13px;
     }
 }
