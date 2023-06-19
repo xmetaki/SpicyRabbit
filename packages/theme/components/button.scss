@@ -1,4 +1,4 @@
-@import '../variables/var.button.scss';
+@use '../variables/var.button.scss' as *;
 
 .mt_button {
     display: inline-flex;
@@ -8,7 +8,7 @@
     outline: 0;
     cursor: pointer;
     border-radius: 5px;
-    margin: 0px 3px;
+    margin: 5px 3px;
     color: var(--button-color);
     background-color: var(--button-background);
     height: var(--button-height);

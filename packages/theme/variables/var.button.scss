@@ -44,9 +44,9 @@
 
     &__info {
         --button-color: #fff;
-        --button-background: #7B52ab;
-        --button-hover: #{lighten(#7B52ab, 20%)};
-        --button-active: #{darken(#7B52ab, 20%)};
+        --button-background: #333;
+        --button-hover: #{lighten(#333, 20%)};
+        --button-active: #{darken(#333, 20%)};
     }
 
     &__large {

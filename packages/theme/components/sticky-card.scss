@@ -1,0 +1,32 @@
+@use '../variables/var.sticky-card.scss' as *;
+.mt_sticky-card {
+    border: 1px solid #f0f0f0;
+    padding: 5px;
+    &__source {
+        overflow: hidden;
+        transition: auto ease 1s;
+    }
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
+        color: var(--sticky-card-font-color);
+        background-color: var(--sticky-card-bg-color);
+        cursor: pointer;
+        user-select: none;
+        position: sticky;
+        bottom: 0px;
+        z-index: 1;
+    }
+
+    &__expand {
+        opacity: 1;
+        height: auto;
+    }
+    
+    &__collapse {
+        opacity: 0.5;
+        height: 0;
+    }
+}

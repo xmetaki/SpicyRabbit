@@ -12,10 +12,18 @@ export const PluginComponents = (md: MarkdownIt): void => {
         },
 
         render(tokens: any[], idx: number) {
-            if (tokens[idx].nesting === 1) {
-                return `<MtButton>`
+            const currentToken = tokens[idx]
+            const nextToken = tokens[idx + 1]
+            if (currentToken.nesting === 1) {
+                let content = ''
+                if (nextToken.type === 'fence' && nextToken.info === 'vue') {
+                    content = nextToken.content
+                 }
+                return `<div class="component__container"><MtStickyCard>
+                    ${md.render(content)} <template #source>`
             }
-            return "</MtButton>";
+            
+            return "</template></MtStickyCard></div>";
         }
     })
 }
