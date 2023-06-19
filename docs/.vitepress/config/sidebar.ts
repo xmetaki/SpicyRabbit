@@ -29,9 +29,17 @@ const sidebar = {
       {
         text: '基础组件',
         items: [
-          { text: 'Button 按钮', link: '/components/button' }
+          { text: 'Button 按钮', link: '/components/button' },
+          { text: 'StickyCard 粘性卡片', link: '/components/sticky'}
+        ]
+      },
+      {
+        text: '其他',
+        items: [
+          { text: 'HeightTransition 高度过渡', link: '/components/height-transition'}
         ]
       }
+      
     ]
   }
   

@@ -1,3 +1,30 @@
+:root {
+  --vp-c-brand: #7B52ab;
+}
+.vp-doc div[class*='language-'] {
+  border-radius: 0px;
+  margin: 0px;
+}
+
+.VPSidebarItem  {
+  &:not(.level-0) .text {
+    margin-bottom: 10px;
+    border-radius: 5px;;
+    padding-left: 10px;
+    &:hover {
+      background-color: #7B52ab;
+      color: #fff !important;
+    }
+  }
+  &.is-active .text {
+    background-color: #7B52ab;
+    color: #fff !important;
+  }
+  
+}
+.component__container {
+  margin: 10px 0px;
+}
 // 移除表格默认样式
 table {
     margin: 0;
@@ -43,7 +70,7 @@ th {
 th {
     white-space: nowrap;
     color: #fff;
-    background-color: #4153d9;
+    background-color: #7B52ab;
     border: 1px solid #fff;
 }
 }
