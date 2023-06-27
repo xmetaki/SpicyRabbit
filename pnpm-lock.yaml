@@ -98,10 +98,6 @@ importers:
         version: 1.0.0-beta.1
 
   packages/components:
-    dependencies:
-      gsap:
-        specifier: ^3.12.1
-        version: 3.12.1
     devDependencies:
       '@spicyrabbit/utils':
         specifier: workspace:*
@@ -109,6 +105,9 @@ importers:
       '@vue/runtime-core':
         specifier: ^3.3.4
         version: 3.3.4
+      gsap:
+        specifier: ^3.12.1
+        version: 3.12.1
       vue:
         specifier: ^3.3.4
         version: 3.3.4
@@ -1459,7 +1458,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.9(@types/node@20.3.1)
+      vite: 4.3.9(sass@1.63.4)
     dev: true
 
   /@vitejs/plugin-vue@4.2.3(vite@4.3.9)(vue@3.3.4):
@@ -3335,7 +3334,6 @@ packages:
 
   /gsap@3.12.1:
     resolution: {integrity: sha512-FXtb2YbBE9l8I9Pl5DFLpCMedaiMPztRlr0Ln0CMSnJn+pbTaeKlzgth8cLNPc7PzNwIZe+SEQiBBAWaBKJdVA==}
-    dev: false
 
   /handlebars@4.7.7:
     resolution: {integrity: sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA==}
