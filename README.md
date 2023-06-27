@@ -48,3 +48,7 @@ createApp(App).use(Rabbit).mount('#app')
     <MtButton></Mtbutton>
 </template>
 ```
+
+## 🤡 Performance | 性能
+
+目前开发效果优先，在动效上使用了gsap做辅助，后期会逐步迁移到自己的动效库之上
