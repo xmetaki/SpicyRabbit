@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/xmetaki/SpicyRabbit/compare/v0.0.10...v0.0.11) (2023-07-05)
+
+
+### 👷 Continuous Integration | CI 配置
+
+* **ui:** button组件功能更新 ([1750482](https://github.com/xmetaki/SpicyRabbit/commit/17504821fd47cdd632cf14d6560ca6db4233423c))
+
+
+### ✨ Features | 新功能
+
+* **ui:** sticky Card and HeightTransition ([9cdc5e9](https://github.com/xmetaki/SpicyRabbit/commit/9cdc5e9b9102783910ae3b6390a0297bafd9da0b))
+
+
+### 🚀 Chore | 构建/工程依赖/工具
+
+* **project:** 更新lock file ([0bb795b](https://github.com/xmetaki/SpicyRabbit/commit/0bb795b73feaac9afe2b6893a642628286294145))
+* **project:** 支持单元测试 ([e3f2514](https://github.com/xmetaki/SpicyRabbit/commit/e3f25142fab2c83745253e2b3b997c66cf0f5517))
+
+
+### 📖 Documentation | 文档
+
+* **project:** readme站点提示 ([cb62cbe](https://github.com/xmetaki/SpicyRabbit/commit/cb62cbe76a44f7c6e1f4a538edce5c4a783b9f12))
+
 ### [0.0.10](https://github.com/xmetaki/SpicyRabbit/compare/v0.0.8...v0.0.10) (2023-06-16)
 
 

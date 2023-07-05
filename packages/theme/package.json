@@ -1,6 +1,6 @@
 {
   "name": "@spicyrabbit/theme",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "@spicyrabbit/theme",
   "main": "index.scss",
   "scripts": {},

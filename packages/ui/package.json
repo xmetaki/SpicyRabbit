@@ -1,6 +1,6 @@
 {
   "name": "@spicyrabbit/ui",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "UI Library based on Vue3",
   "main": "./dist/lib/components/index.js",
   "module": "./dist/es/components/index.js",
@@ -11,7 +11,7 @@
     "build": "pnpm run build:theme && pnpm run build:ui",
     "release": "pnpm run build && pnpm run pub:remote",
     "pub:remote": "pnpm publish --no-git-checks --registry https://registry.npmjs.org/",
-    "pub:local":"pnpm publish --no-git-checks --registry http://localhost:4873/"
+    "pub:local": "pnpm publish --no-git-checks --registry http://localhost:4873/"
   },
   "exports": {
     ".": {

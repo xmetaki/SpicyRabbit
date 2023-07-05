@@ -1,6 +1,6 @@
 {
   "name": "SpicyRabbit",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "scripts": {
     "prepare": "husky install",
     "release": "pnpm run test && pnpm run gen:version && pnpm run release:ui",
