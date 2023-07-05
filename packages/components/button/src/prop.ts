@@ -1,5 +1,5 @@
 import { ExtractPropTypes, PropType } from 'vue'
-import { ComponentType } from '../../_global'
+import { ComponentType,ComponentSize } from '../../_global'
 
 export const ButtonProps = {
     type: {
@@ -7,7 +7,7 @@ export const ButtonProps = {
         default: 'default'
     },
     size: {
-        type: String as PropType<ComponentType>,
+        type: String as PropType<ComponentSize>,
         default: 'default'
     }
 }

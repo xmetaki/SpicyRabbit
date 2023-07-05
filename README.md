@@ -48,3 +48,12 @@ createApp(App).use(Rabbit).mount('#app')
     <MtButton></Mtbutton>
 </template>
 ```
+
+## 🤡 Performance | 性能
+
+目前开发效果优先，在动效上使用了gsap做辅助，后期会逐步迁移到自己的动效库之上
+
+## Website | 预览站点
+- [中文站点](http://47.98.20.229/)
+- [英文站点-正式版](https://spicy-rabbit-docs.vercel.app/)
+- [英文站点-测试版](https://spicy-rabbit-docs-git-dev-metakirobot-gmailcom.vercel.app/)

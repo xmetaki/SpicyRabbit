@@ -2,15 +2,12 @@ import { UserConfigExport } from "vite";
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
 import { resolve } from 'path'
+import { alias } from '../../alias'
 const __dirname = resolve()
-const comPath = resolve(__dirname, "../components/")
-console.log(comPath)
 export default ():UserConfigExport => {
     return {
         resolve: {
-            alias: {
-                '@spicyrabbit/utils': resolve(comPath, '../utils')
-            }
+            alias
         },
         define: {
             __DEV__: process.env.NODE_ENV !== 'production'
@@ -53,7 +50,7 @@ export default ():UserConfigExport => {
 
             /**配置rollup */
             rollupOptions: {
-                external: ['vue'],
+                external: ['vue', 'gsap'],
                 output: [
                     /**esmodule规范包 */
                     {
@@ -76,20 +73,6 @@ export default ():UserConfigExport => {
                         chunkFileNames: '[name].js',
                         assetFileNames: '[name].[ext]',
                         preserveModules: true
-                    },
-                    /**umd规范包 适用于浏览器+node环境 */
-                    {
-                        format: 'umd',
-                        name: 'SpicyRabbit',
-                        exports: 'named',
-                        dir: 'dist/umd',
-                        entryFileNames: 'index.js',
-                        chunkFileNames: '[name].js',
-                        assetFileNames: '[name].[ext]',
-                        /**依赖环境中的变量 */
-                        globals: {
-                            vue: 'Vue'
-                        }
                     }
                 ]
             }

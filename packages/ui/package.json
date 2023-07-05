@@ -7,9 +7,11 @@
   "types": "./dist/types/components/index.d.ts",
   "scripts": {
     "build:theme": "vite build --config vite.config.css.ts",
-    "build:ui": "vite build --config vite.config.ui.ts",
+    "build:ui": "vite build --config vite.config.module.ts && vite build --config vite.config.umd.ts",
     "build": "pnpm run build:theme && pnpm run build:ui",
-    "release": "pnpm run build && pnpm publish --no-git-checks"
+    "release": "pnpm run build && pnpm run pub:remote",
+    "pub:remote": "pnpm publish --no-git-checks --registry https://registry.npmjs.org/",
+    "pub:local":"pnpm publish --no-git-checks --registry http://localhost:4873/"
   },
   "exports": {
     ".": {
@@ -34,9 +36,9 @@
     "vue3"
   ],
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
+  "homepage": "https://spicy-rabbit-docs.vercel.app/",
   "repository": {
     "url": "https://github.com/xmetaki/SpicyRabbit"
   },
@@ -49,7 +51,8 @@
     "*.css"
   ],
   "dependencies": {
-    "@vue/runtime-core": "^3.3.4"
+    "@vue/runtime-core": "^3.3.4",
+    "gsap": "^3.12.1"
   },
   "devDependencies": {
     "@spicyrabbit/components": "workspace:*",
