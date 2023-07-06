@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/xmetaki/SpicyRabbit/compare/v0.0.11...v0.0.12) (2023-07-06)
+
+
+### 😤 Code Refactoring | 代码重构
+
+* **components:** 优化scss编写并构造部分规范 ([e7124ba](https://github.com/xmetaki/SpicyRabbit/commit/e7124ba40b4c9beb6620323ecb85ec8d13576a13))
+
+
+### ✨ Features | 新功能
+
+* **components:** 支持输入框和标签 ([862ec03](https://github.com/xmetaki/SpicyRabbit/commit/862ec031b011d5724129dfe78c2333efbb4e5810))
+
 ### [0.0.11](https://github.com/xmetaki/SpicyRabbit/compare/v0.0.10...v0.0.11) (2023-07-05)
 
 
