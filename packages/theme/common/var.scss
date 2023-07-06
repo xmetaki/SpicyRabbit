@@ -1,0 +1,59 @@
+@use "sass:map";
+$types: primary, success, danger, warning, error, default ,info;
+// 没传值默认空map
+$colors: () !default;
+
+$colors: map.deep-merge(
+    (
+        'primary': #4153d9,
+        'success': #45BF55,
+        'danger': #ff6d1f,
+        'warning': #ffd412,
+        'error': #d40d12,
+        'default': #f0f0f0,
+        'info': #333333,
+        'white': #ffffff,
+        'black': #000000
+    ),
+    $colors
+);
+
+$color-primary: map.get($colors, 'primary') !default;
+$color-success: map.get($colors, 'success') !default;
+$color-danger: map.get($colors, 'danger') !default;
+$color-warning: map.get($colors, 'warning') !default;
+$color-error: map.get($colors, 'error') !default;
+$color-default: map.get($colors, 'default') !default;
+$color-info: map.get($colors, 'info') !default;
+$color-white: map.get($colors, 'white') !default;
+$color-black: map.get($colors, 'black') !default;
+
+$sizes: large, middle, small, tiny;
+
+$size_map: () !default;
+
+$size_map: map.deep-merge(
+    (
+        'large': (
+            'height': 40px,
+            'padding': 13px,
+            'fontSize': 17px
+        ),
+        'middle': (
+            'height': 35px,
+            'padding': 12px,
+            'fontSize': 15px
+        ),
+        'small': (
+            'height': 30px,
+            'padding': 10px,
+            'fontSize': 14px
+        ),
+        'tiny': (
+            'height': 25px,
+            'padding': 8px,
+            'fontSize': 13px
+        )
+    ),
+    $size_map
+)

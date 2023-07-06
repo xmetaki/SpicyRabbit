@@ -1,4 +1,4 @@
-@import './components/button.scss';
-@import './components/alert.scss';
-@import './components/dialog.scss';
-@import './components/sticky-card.scss';
+@use './components/button.scss' as *;
+@use './components/alert.scss' as *;
+@use './components/dialog.scss' as *;
+@use './components/sticky-card.scss' as *;
