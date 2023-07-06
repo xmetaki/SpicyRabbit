@@ -13,6 +13,8 @@
             } @else {
                 --button-color: #{$color-white};
             }
+            --simple-color: #{darken($current, 10%)};
+            --simple-bg: #{lighten($current, 35%)};
         }
     }
     // 生成size类

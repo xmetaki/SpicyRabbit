@@ -5,11 +5,11 @@
 </template>
 
 <script setup lang="ts">
-import useButton from '../use-button';
-import { ButtonProps } from './prop'
+import {useInnerClass } from '../use-button';
+import { buttonProps } from './prop'
 defineOptions({
     name: 'MtButton'
 })
-const props = defineProps(ButtonProps)
-const { classList } = useButton(props)
+const props = defineProps(buttonProps)
+const classList = useInnerClass(props)
 </script>

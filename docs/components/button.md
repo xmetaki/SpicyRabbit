@@ -6,58 +6,66 @@
 
 
 :::components
-```vue
-<MtButton type="primary">主要按钮</MtButton>
-<MtButton type="success">成功按钮</MtButton>
-<MtButton type="danger">危险按钮</MtButton>
-<MtButton type="warning">警告按钮</MtButton>
-<MtButton type="error">错误按钮</MtButton>
-<MtButton type="info">信息按钮</MtButton>
-<MtButton type="default">默认按钮</MtButton>
+```html
+<MtButton theme="primary">主要按钮</MtButton>
+<MtButton theme="success">成功按钮</MtButton>
+<MtButton theme="danger">危险按钮</MtButton>
+<MtButton theme="warning">警告按钮</MtButton>
+<MtButton theme="error">错误按钮</MtButton>
+<MtButton theme="info">信息按钮</MtButton>
+<MtButton theme="default">默认按钮</MtButton>
 ```
 :::
 
-### 按钮尺寸
+### 尺寸
 
 :::components
-```vue
-<MtButton size="tiny" type="primary">主要按钮</MtButton>
-<MtButton size="tiny" type="success">成功按钮</MtButton>
-<MtButton size="tiny" type="danger">危险按钮</MtButton>
-<MtButton size="tiny" type="warning">警告按钮</MtButton>
-<MtButton size="tiny" type="error">信息按钮</MtButton>
-<MtButton size="tiny" type="info">默认按钮</MtButton>
-<br/>
-<MtButton size="small" type="primary">主要按钮</MtButton>
-<MtButton size="small" type="success">成功按钮</MtButton>
-<MtButton size="small" type="danger">危险按钮</MtButton>
-<MtButton size="small" type="warning">警告按钮</MtButton>
-<MtButton size="small" type="error">信息按钮</MtButton>
-<MtButton size="small" type="info">默认按钮</MtButton>
-
-
-<br/>
-<MtButton size="middle" type="primary">主要按钮</MtButton>
-<MtButton size="middle" type="success">成功按钮</MtButton>
-<MtButton size="middle" type="danger">危险按钮</MtButton>
-<MtButton size="middle" type="warning">警告按钮</MtButton>
-<MtButton size="middle" type="error">信息按钮</MtButton>
-<MtButton size="middle" type="info">默认按钮</MtButton>
-
-<br/>
-<MtButton size="large" type="primary">主要按钮</MtButton>
-<MtButton size="large" type="success">成功按钮</MtButton>
-<MtButton size="large" type="danger">危险按钮</MtButton>
-<MtButton size="large" type="warning">警告按钮</MtButton>
-<MtButton size="large" type="error">信息按钮</MtButton>
-<MtButton size="large" type="info">默认按钮</MtButton>
+```html
+<MtButton size="large" theme="primary">主要按钮</MtButton>
+<MtButton size="middle" theme="primary">主要按钮</MtButton>
+<MtButton size="small" theme="primary">主要按钮</MtButton>
+<MtButton size="tiny" theme="primary">主要按钮</MtButton>
 ```
 :::
 
+### 朴素风格
 
-## 参数
+:::components
+```html
+<MtButton plain theme="primary">主要按钮</MtButton>
+<MtButton plain theme="success">成功按钮</MtButton>
+<MtButton plain theme="danger">危险按钮</MtButton>
+<MtButton plain theme="warning">警告按钮</MtButton>
+<MtButton plain theme="error">错误按钮</MtButton>
+<MtButton plain theme="info">信息按钮</MtButton>
+<MtButton plain theme="default">默认按钮</MtButton>
+```
+:::
+
+### 圆角风格
+
+:::components
+```html
+<MtButton round theme="primary">主要按钮</MtButton>
+<MtButton round theme="success">成功按钮</MtButton>
+<MtButton round theme="danger">危险按钮</MtButton>
+<MtButton round theme="warning">警告按钮</MtButton>
+<MtButton round theme="error">错误按钮</MtButton>
+<MtButton round theme="info">信息按钮</MtButton>
+<MtButton round theme="default">默认按钮</MtButton>
+```
+:::
+### Props
 
 |参数|说明|类型|可选值|默认值|
 |--|--|--|--|--|
-|type|按钮类型|ComponentType|——|primary success danger warning error default info|default|
-|size|按钮大小|ComponentSize|——|large middle small tiny|middle|
+|theme|按钮类型|ThemeType|——|primary success danger warning error default info|default|
+|size|按钮尺寸|SizeType|large middle small tiny|middle|
+|round|圆角风格|boolean|true、false|false|
+|plain|朴素风格|boolean|true、false|false|
+
+### Slots
+
+|名称|说明|
+|--|--|
+|default|默认插槽|

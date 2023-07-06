@@ -16,7 +16,7 @@ export const PluginComponents = (md: MarkdownIt): void => {
             const nextToken = tokens[idx + 1]
             if (currentToken.nesting === 1) {
                 let content = ''
-                if (nextToken.type === 'fence' && nextToken.info === 'vue') {
+                if (nextToken.type === 'fence' && nextToken.info === 'html') {
                     content = nextToken.content
                  }
                 return `<div class="component__container"><MtStickyCard>

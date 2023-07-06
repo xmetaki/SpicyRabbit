@@ -1,0 +1,30 @@
+@use '../variables/var.tag.scss' as *;
+@use "../common/var.scss" as *;
+
+.mt_tag {
+    margin: 5px 3px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px var(--tag-padding);
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+    height: var(--tag-height);
+    font-size: var(--tag-font-size);
+    user-select: none;
+    cursor: pointer;
+
+    &__round {
+        border-radius: 5px;
+    }
+
+    &__plain {
+        color: var(--tag-background);
+        background-color: transparent;
+        border: 1px solid var(--tag-background);
+    }
+
+    &__simple {
+        color: var(--simple-color);
+        background-color: var(--simple-bg);
+    }
+}

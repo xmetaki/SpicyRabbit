@@ -34,6 +34,13 @@ const sidebar = {
         ]
       },
       {
+        text: '数据组件',
+        items: [
+          { text: 'Input输入框', link: '/components/input'},
+          { text: 'Tag标签', link: '/components/tag'}
+        ]
+      },
+      {
         text: '其他',
         items: [
           { text: 'HeightTransition 高度过渡', link: '/components/height-transition'}

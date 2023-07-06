@@ -1,0 +1,28 @@
+@use "../common/var.scss" as *;
+@use "sass:map";
+.mt_tag {
+    // 生成type类
+    @each $type in $types {
+        &__#{$type} {
+            $current: map.get($colors,$type);
+            --tag-background: #{$current};
+            --tag-hover: #{lighten($current, 20%)};
+            --tag-active: #{darken($current, 20%)};
+            @if $type == "default" {
+                --tag-color: #{$color-info};
+            } @else {
+                --tag-color: #{$color-white};
+            }
+            --simple-color: #{darken($current, 10%)};
+            --simple-bg: #{lighten($current, 35%)};
+        }
+    }
+    // 生成size类
+    @each $size in $sizes {
+        &__#{$size} {
+            --tag-height: #{map.get($size_map, $size, 'height')};
+            --tag-padding:  #{map.get($size_map, $size, 'padding')};
+            --tag-font-size:  #{map.get($size_map, $size, 'fontSize')};
+        }
+    }
+}

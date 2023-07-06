@@ -10,6 +10,11 @@ export default defineConfig({
      * @see https://vitepress.dev/reference/site-config#description
      */
     description: 'life is fucking movie',
+    vue: {
+        script: {
+            defineModel: true
+        }
+    },
     lastUpdated: true,
     cacheDir: '../../node_modules',
     themeConfig:  theme,

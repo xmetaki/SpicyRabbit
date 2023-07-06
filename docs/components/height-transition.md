@@ -13,7 +13,7 @@ const changeShow = () => {
 
 
 ::: components
-```vue
+```html
 <MtButton @click="changeShow" type="danger">
     {{ show1 ? '关闭' : '开启' }}
 </MtButton>

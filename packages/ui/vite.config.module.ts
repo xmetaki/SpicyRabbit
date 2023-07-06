@@ -13,7 +13,12 @@ export default ():UserConfigExport => {
             __DEV__: process.env.NODE_ENV !== 'production'
         },
         plugins: [
-            vue(),
+            vue({
+                "script": {
+                    //开启defineModel使用
+                    "defineModel": true
+                }
+            }),
             dts({
                 "skipDiagnostics": true,
                 /**import('xxx').yyy转 import { yyy } from 'xxx' */  

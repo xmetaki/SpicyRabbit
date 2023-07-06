@@ -1,12 +1,16 @@
 import { ExtractPropTypes, PropType } from "vue";
 import { SizeType, ThemeType } from "../../_global/hooks/use-class";
 
-export const buttonProps = {
+export const tagProps = {
     theme: {
         type: String as PropType<ThemeType>,
         default: 'primary'
     },
     round: {
+        type: Boolean,
+        default: false
+    },
+    simple: {
         type: Boolean,
         default: false
     },
@@ -19,4 +23,5 @@ export const buttonProps = {
         default: 'middle'
     } 
 }
-export type ButtonPropType = ExtractPropTypes<typeof buttonProps>
+
+export type TagPropsType = ExtractPropTypes<typeof tagProps>

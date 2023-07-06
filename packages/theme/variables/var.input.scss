@@ -1,0 +1,19 @@
+@use "../common/var.scss" as *;
+@use "sass:map";
+.mt_input {
+    border: 1px solid #{lighten($color-primary, 20)};
+
+    &:focus-within,
+    &:active {
+        box-shadow: 0px 0px 2px 1px #{lighten($color-primary, 40)};
+        border: 1px solid $color-primary;
+    }
+
+    @each $size in $sizes {
+        &__#{$size} {
+            --input-height: #{map.get($size_map, $size, 'height')};
+            --input-padding:  #{map.get($size_map, $size, 'padding')};
+            --input-font-size:  #{map.get($size_map, $size, 'fontSize')};
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@use '../variables/var.input.scss' as *;
+@use "../common/var.scss" as *;
+.mt_input {
+    margin: 5px 3px;
+    border-radius: 3px;
+    height: var(--input-height);
+    padding: 0px var(--input-padding);
+    display: inline-flex;
+    align-items: center;
+    font-size: var(--input-font-size);
+
+    input {
+        font-size: inherit;
+    }
+
+    &__pwd {
+        user-select: none;
+        cursor: pointer;
+        color: #{lighten($color-primary, 10)};
+        padding: 0px 10px;
+        background-color: #{lighten($color-primary, 40)};
+    }
+}

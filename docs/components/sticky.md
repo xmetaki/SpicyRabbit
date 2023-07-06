@@ -3,7 +3,7 @@
 ## 实例
 
 ::: components
-```vue
+```html
 <MtStickyCard expandText="弹出" collapseText="收起">
     <div style="height:40px;background:#ffd412;">
     </div>
