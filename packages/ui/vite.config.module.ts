@@ -35,7 +35,8 @@ export default ():UserConfigExport => {
                     "dist",
                     "**/dist",
                     "**/node_modules"
-                ]
+                ],
+                "clearPureImport": false // 防止volar.hint.d.ts被清除
             })
         ],
         css: {},
