@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/xmetaki/SpicyRabbit/compare/v0.0.12...v0.0.13) (2023-07-07)
+
+
+### ⛅ Bug Fixes | 漏洞修复
+
+* **project:** 类型提示异常 ([ba33126](https://github.com/xmetaki/SpicyRabbit/commit/ba331268a6a946bddac4af77c9e9ec5814bd744a))
+
 ### [0.0.12](https://github.com/xmetaki/SpicyRabbit/compare/v0.0.11...v0.0.12) (2023-07-06)
 
 
