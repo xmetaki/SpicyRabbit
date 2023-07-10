@@ -1,8 +1,8 @@
 import gsap from 'gsap'
-type RippleOptions = {
+export type RippleOptions = {
     rippleColor: string
 }
-export function useRipple(e: MouseEvent, el: HTMLElement, rippleOptions:RippleOptions) {
+export function useRipple(e: MouseEvent, el: HTMLElement, rippleOptions: Partial<RippleOptions>) {
     
     const sideLength = 50
     const ripple = document.createElement("div")

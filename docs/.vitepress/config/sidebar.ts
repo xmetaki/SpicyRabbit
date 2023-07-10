@@ -44,7 +44,8 @@ const sidebar = {
       {
         text: '其他',
         items: [
-          { text: 'HeightTransition 高度过渡', link: '/components/height-transition'}
+          { text: 'HeightTransition 高度过渡', link: '/components/height-transition'},
+          { text: 'Animation指令', link: '/components/animation'}
         ]
       }
       
