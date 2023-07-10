@@ -5,13 +5,13 @@
 ### 文字头像
 ::: components
 ```html
-<MtAvatar theme="primary" text="小李"></MtAvatar>
-<MtAvatar theme="success" text="李高"></MtAvatar>
-<MtAvatar theme="danger"  text="欧皇"></MtAvatar>
-<MtAvatar theme="warning" text="皇艺"></MtAvatar>
-<MtAvatar theme="error"   text="考克"></MtAvatar>
-<MtAvatar theme="info"    text="第羽"></MtAvatar>
-<MtAvatar theme="default" text="一天"></MtAvatar>
+<MtAvatar theme="primary" text="渚田"></MtAvatar>
+<MtAvatar theme="success" text="清河"></MtAvatar>
+<MtAvatar theme="danger"  text="沙漠"></MtAvatar>
+<MtAvatar theme="warning" text="白云"></MtAvatar>
+<MtAvatar theme="error"   text="鸟类"></MtAvatar>
+<MtAvatar theme="info"    text="飞翔"></MtAvatar>
+<MtAvatar theme="default" text="回想"></MtAvatar>
 ```
 :::
 

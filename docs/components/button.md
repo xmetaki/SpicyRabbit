@@ -55,6 +55,37 @@
 <MtButton round theme="default">默认按钮</MtButton>
 ```
 :::
+
+### 波纹动效
+
+
+:::components
+```html
+<MtButton ripple theme="primary">主要按钮</MtButton>
+<MtButton ripple theme="success">成功按钮</MtButton>
+<MtButton ripple theme="danger">危险按钮</MtButton>
+<MtButton ripple theme="warning">警告按钮</MtButton>
+<MtButton ripple theme="error">错误按钮</MtButton>
+<MtButton ripple theme="info">信息按钮</MtButton>
+<MtButton ripple theme="default">默认按钮</MtButton>
+```
+:::
+
+### 波纹动效自定义颜色
+
+
+:::components
+```html
+<MtButton ripple ripple-color="blue" theme="primary">主要按钮</MtButton>
+<MtButton ripple ripple-color="green" theme="success">成功按钮</MtButton>
+<MtButton ripple ripple-color="yellow" theme="danger">危险按钮</MtButton>
+<MtButton ripple ripple-color="brown" theme="warning">警告按钮</MtButton>
+<MtButton ripple ripple-color="red" theme="error">错误按钮</MtButton>
+<MtButton ripple ripple-color="black" theme="info">信息按钮</MtButton>
+<MtButton ripple ripple-color="orange" theme="default">默认按钮</MtButton>
+```
+:::
+
 ### Props
 
 |参数|说明|类型|可选值|默认值|
@@ -63,7 +94,7 @@
 |size|按钮尺寸|SizeType|large middle small tiny|middle|
 |round|圆角风格|boolean|true、false|false|
 |plain|朴素风格|boolean|true、false|false|
-
+|ripple|波纹动效|boolean|true、false|false|
 ### Slots
 
 |名称|说明|

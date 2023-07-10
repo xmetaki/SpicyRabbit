@@ -17,6 +17,13 @@ export const buttonProps = {
     size: {
         type: String as PropType<SizeType>,
         default: 'middle'
-    } 
+    },
+    ripple: {
+        type: Boolean,
+        default: false
+    },
+    rippleColor: {
+        type: String
+    }
 }
 export type ButtonPropType = ExtractPropTypes<typeof buttonProps>
