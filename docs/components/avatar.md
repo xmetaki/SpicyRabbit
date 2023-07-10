@@ -39,6 +39,14 @@
 ```
 :::
 
+### 图片头像异常处理
+::: components
+```html
+<MtAvatar theme="primary" source="http://47.98.20.229/rab1bit.png"></MtAvatar>
+<MtAvatar theme="primary" source="http://47.98.20.229/rabbit.png"></MtAvatar>
+```
+:::
+
 ### 圆角头像
 ::: components
 ```html
