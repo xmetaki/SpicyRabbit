@@ -1,16 +1,31 @@
 
-import type { Directive, VNode,DirectiveBinding } from "vue"
+import type { Directive, VNode,DirectiveBinding, ObjectDirective } from "vue"
 import { RippleOptions, useRipple } from "../_global/hooks/use-animation"
 const name = 'animation-ripple'
+type ClickHandler = ((e: MouseEvent) => void ) | undefined | null
 
-const rippleFn: Directive<any, RippleOptions | undefined> = (el:HTMLElement, binding: DirectiveBinding<RippleOptions | undefined>, vnode: VNode) => {
-    const value = binding.value
-    el.addEventListener('click', (e) => {
-        useRipple(e, el, value || {})
-    })
+// 获取指令处理逻辑
+const getLogic = (): ObjectDirective<any, RippleOptions | undefined> => {
+    let clickHandler: ClickHandler
+    return {
+        mounted(el: HTMLElement, binding: DirectiveBinding<RippleOptions | undefined>) {
+            clickHandler = (e: MouseEvent) => {
+                useRipple(e, el, value || {}) 
+            }
+            const value = binding.value
+            el.addEventListener('click', clickHandler)
+        },
+        unmounted(el: HTMLElement, binding: DirectiveBinding<RippleOptions | undefined>) {
+            if (clickHandler) {
+                el.removeEventListener('click', clickHandler)
+                clickHandler = null
+            }
+        }
+    }
 }
+
 
 export const ripple = {
     dName: name,
-    logic: rippleFn
+    logic: getLogic()
 }
