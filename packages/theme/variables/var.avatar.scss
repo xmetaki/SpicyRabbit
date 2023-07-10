@@ -1,0 +1,27 @@
+@use "../common/var.scss" as *;
+@use "sass:map";
+.mt_avatar {
+    @each $type in $types {
+        &__#{$type} {
+            $current: map.get($colors,$type);
+            --avatar-background: #{$current};
+            --avatar-hover: #{lighten($current, 20%)};
+            --avatar-active: #{darken($current, 20%)};
+            @if $type == "default" {
+                --avatar-color: #{$color-info};
+            } @else {
+                --avatar-color: #{$color-white};
+            }
+            --simple-color: #{darken($current, 10%)};
+            --simple-bg: #{lighten($current, 35%)};
+        }
+    }
+    // 生成size类
+    @each $size in $sizes {
+        &__#{$size} {
+            --avatar-height: #{map.get($size_map, $size, 'height')};
+            --avatar-padding:  #{map.get($size_map, $size, 'padding')};
+            --avatar-font-size:  #{map.get($size_map, $size, 'fontSize')};
+        }
+    }
+}

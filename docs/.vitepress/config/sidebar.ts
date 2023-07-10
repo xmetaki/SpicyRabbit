@@ -37,7 +37,8 @@ const sidebar = {
         text: '数据组件',
         items: [
           { text: 'Input输入框', link: '/components/input'},
-          { text: 'Tag标签', link: '/components/tag'}
+          { text: 'Tag标签', link: '/components/tag'},
+          { text: 'Avatar头像', link: '/components/avatar'}
         ]
       },
       {

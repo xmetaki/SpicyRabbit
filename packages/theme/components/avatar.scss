@@ -1,0 +1,30 @@
+@use '../variables/var.avatar.scss' as *;
+@use "../common/var.scss" as *;
+
+.mt_avatar {
+    height: var(--avatar-height);
+    width: var(--avatar-height);
+    background-color: var(--avatar-background);
+    color: var(--avatar-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 3px;
+    font-size: var(--avatar-font-size);
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    vertical-align: bottom; //行内底部基线对齐
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__round {
+        border-radius: 50%;
+    }
+}

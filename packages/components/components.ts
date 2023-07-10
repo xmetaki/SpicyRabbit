@@ -9,3 +9,5 @@ export * from './height-transition'
 export * from './input'
 
 export * from './tag'
+
+export * from './avatar'
