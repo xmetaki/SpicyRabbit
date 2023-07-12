@@ -1,0 +1,14 @@
+{
+    "append": {
+        "type": "append",
+        "loc": "${ROOT}/../../packages/theme/index.scss"
+    },
+    "css": {
+        "type": "create",
+        "loc": "${ROOT}/../../packages/theme/components/${COM_NAME}.scss"
+    },
+    "var.css": {
+        "type": "create",
+        "loc": "${ROOT}/../../packages/theme/variables/var.${COM_NAME}.scss"
+    }
+}

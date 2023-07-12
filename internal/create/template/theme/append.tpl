@@ -1,0 +1,1 @@
+@use './components/${COM_NAME}.scss';

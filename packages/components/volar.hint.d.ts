@@ -6,7 +6,7 @@ declare module '@vue/runtime-core' {
         MtButton: typeof components.MtButton,
         MtInput: typeof components.MtInput,
         MtTag: typeof components.MtTag,
-        MtAvatar: typeof components.MtAvatar
+        MtAvatar: typeof components.MtAvatar,
     }
 
     export interface GlobalDirectives {

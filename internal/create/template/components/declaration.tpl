@@ -1,0 +1,1 @@
+Mt${COM_NAME_UPPERCASE}: typeof components.Mt${COM_NAME_UPPERCASE}
