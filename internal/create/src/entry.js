@@ -120,10 +120,21 @@ export default async function resovleInput(options) {
         console.log(chalk.red("❌ 请输入合法的组件名称(纯英文)"))
         return
     }
+
+    
     const prjRoot = new URL(
         "..",
         import.meta.url,        
     ).pathname
+    const alreadyHave = fg.sync('*', {
+        cwd: path.join(prjRoot, '../../packages/components'),
+        onlyDirectories: true,
+        deep: 1
+    })
+    if (alreadyHave.includes(comName)) {
+        console.log(chalk.red(`❌ ${comName}名称已被占用!`))
+        return
+    }
 
     //初始化环境变量
     ENV.ROOT = prjRoot
