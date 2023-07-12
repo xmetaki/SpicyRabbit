@@ -20,13 +20,6 @@ const  head:HeadConfig[] = [
         }
     ],
     [
-      'meta',
-      {
-        'http-equiv': 'Content-Security-Policy',
-        'content': 'upgrade-insecure-requests'
-      }
-    ],
-    [
         'meta',
         {
         name: 'Keywords',
