@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { $(COM_NAME)Props } from './prop'
+import { ${COM_NAME}Props } from './prop'
 import { useInnerClass } from '../use-${COM_NAME}'
 defineOptions({
     name: 'Mt${COM_NAME_UPPERCASE}'

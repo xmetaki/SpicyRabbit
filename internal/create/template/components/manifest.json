@@ -1,30 +1,34 @@
 {
     "declaration": {
         "type": "replace",
-        "loc": "${ROOT}/../../packages/components/volar.hint.ts",
+        "loc": "${ROOT}../../packages/components/volar.hint.d.ts",
         "replace": {
             "source": "/(export\\s+interface\\s+GlobalComponents\\s+{.*?,)(\\n)(\\s+})/s",
-            "target": "$1$2        ${CONTENT},\n$3"
+            "target": "$1$2        #{CONTENT},\n$3"
         }
     },
     "export": {
-        "type": "appened",
-        "loc": "${ROOT}/../../packages/components/components.ts"
+        "type": "append",
+        "loc": "${ROOT}../../packages/components/components.ts"
     },
     "hook": {
         "type": "create",
-        "loc": "${ROOT}/../../packages/components/${COM_NAME}/use-{COM_NAME}/index.ts"
+        "loc": "${ROOT}../../packages/components/${COM_NAME}/use-${COM_NAME}/",
+        "name": "index.ts"
     },
     "index": {
         "type": "create",
-        "loc": "${ROOT}/../../packages/components/${COM_NAME}/index.ts"
+        "loc": "${ROOT}../../packages/components/${COM_NAME}/",
+        "name": "index.ts"
     },
     "prop": {
         "type": "create",
-        "loc": "${ROOT}/../../packages/components/${COM_NAME}/src/prop.ts"
+        "loc": "${ROOT}../../packages/components/${COM_NAME}/src/",
+        "name": "prop.ts"
     },
     "vue": {
         "type": "create",
-        "loc": "${ROOT}/../../packages/components/${COM_NAME}/src/${COM_NAME}.vue"
+        "loc": "${ROOT}../../packages/components/${COM_NAME}/src/",
+        "name": "${COM_NAME}.vue"
     }
 }

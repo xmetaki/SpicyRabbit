@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import chalk from 'chalk'
 import inquirer from 'inquirer'
+import resovleInput from './entry.js'
 import { readFile } from 'fs/promises'
 const pkg = JSON.parse(
   await readFile(
@@ -14,8 +15,8 @@ inquirer.prompt([
     {
         type:"input",
         name:"componentName",
-        message:"请输入要创建的组件"
+        message:"请输入要创建的组件:"
     }
 ]).then(answer => {
-    console.log(answer)
+  resovleInput(answer)
 })
