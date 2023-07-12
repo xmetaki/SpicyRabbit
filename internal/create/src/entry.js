@@ -3,6 +3,7 @@ import fg from 'fast-glob'
 import { readFile, writeFile, appendFile } from 'node:fs/promises'
 import fs from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 const ENV = {
     ROOT: "",
     COM_NAME: "",
@@ -31,12 +32,13 @@ async function parsedJson(location) {
  * @returns 模板配置
  */
 function getTemplateLocation() {
-    const templateUrl = new URL(
+    let templateUrl = new URL(
         "../template",
         import.meta.url
     )
+    templateUrl = path.normalize(fileURLToPath(templateUrl))
     const tplList = fg.sync('**/manifest.json', {
-        cwd: templateUrl.pathname,
+        cwd: templateUrl,
         deep: 2,
         absolute: true
     })
@@ -122,10 +124,10 @@ export default async function resovleInput(options) {
     }
 
     
-    const prjRoot = new URL(
+    const prjRoot = path.normalize(fileURLToPath(new URL(
         "..",
         import.meta.url,        
-    ).pathname
+    )))
     const alreadyHave = fg.sync('*', {
         cwd: path.join(prjRoot, '../../packages/components'),
         onlyDirectories: true,

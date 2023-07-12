@@ -7,6 +7,11 @@ const packages = fs
 .filter(file => file.isDirectory())
 .map(m => m.name);
 
+const internals = fs
+.readdirSync(path.resolve(__dirname, 'internal'), { withFileTypes: true })
+.filter(file => file.isDirectory())
+.map(m => m.name);
+
 const defaultScope = execSync('git status --porcelain || true')
 .toString()
 .trim()
@@ -34,7 +39,8 @@ module.exports = {
 	],
 	scopes: [
 		...packages,
-                'project'
+		...internals,
+        'project'
 	],
 	messages: {
 		type: '选择更改类型:\n',
