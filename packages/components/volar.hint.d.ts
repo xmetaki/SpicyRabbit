@@ -7,6 +7,7 @@ declare module '@vue/runtime-core' {
         MtInput: typeof components.MtInput,
         MtTag: typeof components.MtTag,
         MtAvatar: typeof components.MtAvatar,
+        MtSwitch: typeof components.MtSwitch,
     }
 
     export interface GlobalDirectives {

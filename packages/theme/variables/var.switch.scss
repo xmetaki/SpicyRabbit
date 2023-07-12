@@ -1,0 +1,30 @@
+@use "../common/var.scss" as *;
+@use "sass:map";
+.mt_switch {
+    
+    @each $type in $types {
+        &__#{$type}#{&}--active {
+            $current: map.get($colors, $type);
+            --switch-background: #{$current};
+            --switch-hover: #{lighten($current, 20%)};
+            --switch-active: #{darken($current, 20%)};
+            @if $type == "default" {
+                --switch-color: #{$color-info};
+            } @else {
+                --switch-color: #{$color-white};
+            }
+            --simple-color: #{darken($current, 10%)};
+            --simple-bg: #{lighten($current, 35%)};
+        }
+    }
+
+    // 生成size类
+    @each $size in $sizes {
+        &__#{$size} {
+            --switch-height: #{map.get($size_map, $size, 'height')};
+            --switch-width: calc(var(--switch-height) + var(--switch-height));
+            --switch-padding:  #{map.get($size_map, $size, 'padding')};
+            --switch-font-size:  #{map.get($size_map, $size, 'fontSize')};
+        }
+    }
+}

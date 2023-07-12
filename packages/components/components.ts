@@ -11,3 +11,4 @@ export * from './input'
 export * from './tag'
 
 export * from './avatar'
+export * from './switch'
