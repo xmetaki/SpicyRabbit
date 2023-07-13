@@ -49,6 +49,23 @@ const val6 = ref(true)
 ```
 :::
 
+### 文字提示
+
+:::components
+```html
+<MtSwitch v-model="val1" theme="primary">
+    <template v-slot:default="{ active }">
+        {{active ? '开': '闭'}}
+    </template>
+</MtSwitch>
+<MtSwitch v-model="val2" theme="primary">
+    <template v-slot:default="{ active }">
+        {{active ? '😆': '🙁'}}
+    </template>
+</MtSwitch>
+```
+:::
+
 ### Props
 
 |参数|说明|类型|可选值|默认值|

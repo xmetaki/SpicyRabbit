@@ -28,6 +28,8 @@ const clickHandler = (e) => {
 
 <template>
     <div :class="classList" @click="clickHandler">
-        <div class="mt_switch__ball"></div>
+        <div class="mt_switch__ball">
+            <slot :active="modelValue"></slot>
+        </div>
     </div>
 </template>
