@@ -16,6 +16,7 @@
     position: relative;
     overflow: hidden;
     vertical-align: bottom; //行内底部基线对齐
+    -webkit-tap-highlight-color: transparent;
     img {
         position: absolute;
         top: 0;

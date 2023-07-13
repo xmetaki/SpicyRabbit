@@ -12,7 +12,7 @@
     font-size: var(--tag-font-size);
     user-select: none;
     cursor: pointer;
-
+    -webkit-tap-highlight-color: transparent;
     &__round {
         border-radius: 5px;
     }

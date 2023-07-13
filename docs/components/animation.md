@@ -13,6 +13,7 @@
     border-radius: 10px;
     display: grid;
     place-items: center;
+    -webkit-tap-highlight-color: transparent;
     background-color: #b431c2;" v-animation-ripple>
     点击我
 </div>

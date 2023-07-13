@@ -13,7 +13,7 @@
     user-select: none;
     cursor: pointer;
     transition: all ease-in-out .3s;
-
+    -webkit-tap-highlight-color: transparent;
     &--active {
         background-color: var(--switch-background);
         color: var(--switch-color);
