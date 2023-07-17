@@ -41,6 +41,7 @@ const sidebar = {
           { text: 'Avatar头像', link: '/components/avatar'},
           { text: 'Switch开关', link: '/components/switch'},
           { text: 'TimePicker时间选择器', link: '/components/timePicker'},
+          { text: 'Tree树组件', link: '/components/tree'},
         ]
       },
       {
