@@ -12,3 +12,4 @@ export * from './tag'
 
 export * from './avatar'
 export * from './switch'
+export * from './timePicker'

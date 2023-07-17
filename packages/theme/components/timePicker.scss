@@ -1,0 +1,63 @@
+@use '../variables/var.timePicker.scss' as *;
+@use "../common/var.scss" as *;
+
+.mt_timePicker {
+    position: relative;
+    z-index: 3000;
+    display: inline-block;
+    margin: 5px 3px;
+
+    &__panel {
+       width: 100%;
+       background: #ffffff;
+       position: absolute;
+       top: calc(var(--timePicker-height) + 10px);
+       left: 50%;
+       transform: translate(-50%, 0%);
+       box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.2);
+       display: flex;
+       overflow: hidden;
+       user-select: none;
+    }
+
+    &__time {
+        padding-top: 10px;
+        flex-grow: 1;
+        height: 100%;
+        overflow: hidden auto;
+        cursor: pointer;
+        &:not(:last-child) {
+            border-right: 1px solid #eee;
+        }
+        display: flex;
+        flex-direction: column;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        padding-bottom: 250px;
+    }
+
+    &__node {
+        padding: 10px 0px;
+        margin: 2px 5px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        font-size: var(--timePicker-font-size);
+        &:hover {
+            background-color: var(--simple-bg);
+            color: var(--simple-color);  
+        }
+        &--active {
+           background-color: var(--timePicker-background);
+           color: var(--timePicker-color); 
+           &:hover {
+            background-color: var(--timePicker-background);
+           color: var(--timePicker-color); 
+           }
+        }
+    }
+
+}

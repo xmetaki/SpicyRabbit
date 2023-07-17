@@ -40,6 +40,7 @@ const sidebar = {
           { text: 'Tag标签', link: '/components/tag'},
           { text: 'Avatar头像', link: '/components/avatar'},
           { text: 'Switch开关', link: '/components/switch'},
+          { text: 'TimePicker时间选择器', link: '/components/timePicker'},
         ]
       },
       {

@@ -13,7 +13,11 @@
             } @else {
                 --button-color: #{$color-white};
             }
-            --simple-color: #{darken($current, 10%)};
+            @if $type == "info" {
+                --simple-color: #{$color-white};
+            } @else {
+                --simple-color: #{darken($current, 10%)};
+            }
             --simple-bg: #{lighten($current, 35%)};
         }
     }

@@ -40,7 +40,7 @@ export interface StyleType {
 }
 export default function useClass(
     comName: string, 
-    prop: Partial<StyleType>,
+    prop: Partial<StyleType> & Record<string, unknown>,
     injectClass?: string[]): ComputedRef<string[]> {
     return computed(() => {
         const inject = injectClass ? injectClass : []

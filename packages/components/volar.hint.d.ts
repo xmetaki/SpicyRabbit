@@ -8,6 +8,7 @@ declare module '@vue/runtime-core' {
         MtTag: typeof components.MtTag,
         MtAvatar: typeof components.MtAvatar,
         MtSwitch: typeof components.MtSwitch,
+        MtTimePicker: typeof components.MtTimePicker,
     }
 
     export interface GlobalDirectives {

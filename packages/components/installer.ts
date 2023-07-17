@@ -8,7 +8,7 @@ const install = (app: App): App => {
         app.component(key, value)
     })
     //注册全局指令
-    Object.entries(directives).forEach(([key, value]) => {
+    Object.entries(directives).forEach(([, value]) => {
         app.directive(value.dName, value.logic)
     }) 
     return app
