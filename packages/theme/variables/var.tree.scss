@@ -1,0 +1,34 @@
+@use "../common/var.scss" as *;
+@use "sass:map";
+.mt_tree {
+    @each $type in $types {
+        // 生成type类
+    @each $type in $types {
+        &__#{$type} {
+            $current: map.get($colors,$type);
+            --tree-background: #{$current};
+            --tree-hover: #{lighten($current, 20%)};
+            --tree-active: #{darken($current, 20%)};
+            @if $type == "default" {
+                --tree-color: #{$color-info};
+            } @else {
+                --tree-color: #{$color-white};
+            }
+            @if $type == "info" {
+                --simple-color: #{$color-white};
+            } @else {
+                --simple-color: #{darken($current, 10%)};
+            }
+            --simple-bg: #{lighten($current, 35%)};
+        }
+    }
+    // 生成size类
+    @each $size in $sizes {
+        &__#{$size} {
+            --tree-height: #{map.get($size_map, $size, 'height')};
+            --tree-padding:  #{map.get($size_map, $size, 'padding')};
+            --tree-font-size:  #{map.get($size_map, $size, 'fontSize')};
+        }
+    }
+    }
+}

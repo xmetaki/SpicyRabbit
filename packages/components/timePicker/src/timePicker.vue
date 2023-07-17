@@ -25,14 +25,14 @@ const clickHandler = () => {
 watch(showPanel, (newValue) => {
     if (newValue) {
         // 当前展开时间面板的组件z-index置于最高
-        innerStyle.value.zIndex = '3001'
+        innerStyle.value.zIndex = '11'
     } else {
         // 时间面板折叠后更新输入框的值
         const { h, m, s} = tempModel.value
         innerInput.value = `${h}:${m}:${s}`
         // 和时间面板折叠时间一致
         setTimeout(() => {
-            innerStyle.value.zIndex = '3000'
+            innerStyle.value.zIndex = '10'
         }, 1000 * duration)
     }
 })
