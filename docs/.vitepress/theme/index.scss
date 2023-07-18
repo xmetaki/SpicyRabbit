@@ -2,23 +2,25 @@
   --vp-c-brand: #7B52ab;
 }
 .vp-doc div[class*='language-'] {
-  border-radius: 0px;
+  border-radius: 10px;
   margin: 0px;
 }
-
+.vp-doc [class*='language-'] > span.lang {
+  right: 12px;
+}
 .VPSidebarItem  {
   &:not(.level-0) .text {
     margin-bottom: 10px;
     border-radius: 5px;;
     padding-left: 10px;
     &:hover {
-      background-color: #7B52ab;
-      color: #fff !important;
+      background-color: #7b52ab36;
+      color: #7b52ab !important;
     }
   }
   &.is-active .text {
-    background-color: #7B52ab;
-    color: #fff !important;
+    background-color: #7b52ab36;
+    color: #7b52ab !important;
   }
   
 }
@@ -69,8 +71,8 @@ th {
 
 th {
     white-space: nowrap;
-    color: #fff;
-    background-color: #7B52ab;
-    border: 1px solid #fff;
+    color: #7b52ab;
+    background-color: #7b52ab36;
+    border: 1px solid #7b52ab;
 }
 }

@@ -29,6 +29,12 @@ const val = ref(generateTree(1,3,3))
 
 :::components
 ```html
-<MtTree :data="val" :mapped="{ label: 'cnName', value: 'cnValue', children: 'child'}"/>
+<MtTree 
+   :data="val" 
+   :mapped="{ 
+      label: 'cnName', 
+      value: 'cnValue', 
+      children: 'child'}"
+/>
 ```
 :::
