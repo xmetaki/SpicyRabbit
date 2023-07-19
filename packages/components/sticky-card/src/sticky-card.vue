@@ -27,9 +27,11 @@ const clickHandler = () => {
         <div class="mt_sticky-card__content">
             <slot></slot>
         </div>
-        <MtHeightTransition :is-show="isShow">
+        <MtHeightTransition :is-show="isShow" :duration="0.5">
             <div v-if="$slots.source" class="mt_sticky-card__source">
-                <slot name="source"></slot>
+                <div style="padding: 5px;">
+                    <slot name="source"></slot>
+                </div>
             </div>
         </MtHeightTransition>
         <div v-if="$slots.source" class="mt_sticky-card__label" @click="clickHandler">
